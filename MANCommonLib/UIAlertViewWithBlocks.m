@@ -49,8 +49,8 @@
 
 
 -(void)dealloc{
-    DLog(@"%@のdeallocが呼ばれました",self.class);
-    
+//    DLog(@"%@のdeallocが呼ばれました",self.class);
+
 }
 
 

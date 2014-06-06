@@ -96,7 +96,7 @@ NS_ENUM(int, DeviceType)
 
 -(void)dealloc
 {
-    DLog(@"%@のdeallocが呼ばれました", self.class);
+    //DLog(@"%@のdeallocが呼ばれました", self.class);
 }
 
 

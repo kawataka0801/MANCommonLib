@@ -186,11 +186,10 @@
 
 +(void)handleWithError:(NSError *)error completion:(void(^)(NSError *error))completion{
     
-    DLog(@"失敗コード => %d",error.code);
     switch (error.code) {
             
         case -1011:
-            DLog(@"アクセストークン失効 / URLが違う / 500エラー のいずれか");
+            //"アクセストークン失効 / URLが違う / 500エラー のいずれか"
             if ([ApiErrorHandleHelper isContainsErrorString:@"401" error:error]){
                 return [self refreshAccessTokenByRefreshTokenWithCompletion:completion];
             }
@@ -213,7 +212,7 @@
             break;
             
         case -1001:
-            DLog(@"リクエストタイムアウト");
+            //リクエストタイムアウト
             return completion([[NSError alloc]initWithDomain:@"serverError"
                                                         code:ApiManagerErrorStateServer
                                                     userInfo:@{NSLocalizedDescriptionKey:SERVER_ERROR_ALERT}]);

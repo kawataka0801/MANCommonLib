@@ -55,7 +55,6 @@
 
 - (void)textChanged:(NSNotification *)notification
 {
-    //DLog(@"customTextViewのテキストがchangeしてます");
     if([[self placeholder] length] == 0)
     {
         return;
