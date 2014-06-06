@@ -1,2 +1,2 @@
-MAN_Lib
+MANCommonLib
 =======
