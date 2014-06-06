@@ -23,7 +23,7 @@ Pod::Spec.new do |s|
                     Utility、API関連クラス等
                    DESC
 
-  s.homepage     = "http://github.com/kawataka0801/MAN_Lib"
+  s.homepage     = "http://github.com/kawataka0801/MANCommonLib"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -73,7 +73,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/kawataka0801/MAN_Lib.git", :tag => "v0.0.1" }
+  s.source       = { :git => "https://github.com/kawataka0801/MANCommonLib.git", :tag => "v0.0.1" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
