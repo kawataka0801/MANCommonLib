@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
   #  summary should be tweet-length, and the description more in depth.
   #
 
-  s.name         = "MANCommonLib.podspec"
+  s.name         = "MANCommonLib"
   s.version      = "0.0.1"
   s.summary      = "common classes in student and tutor app"
 
