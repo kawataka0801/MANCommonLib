@@ -9,56 +9,46 @@ Pod::Spec.new do |s|
   s.requires_arc = true
 
   s.subspec 'ApiErrorHandleHelper' do |ss|
-    ss.requires_arc = true
     ss.source_files  = "MANCommonLib/ApiErrorHandleHelper.{h,m}"
   end
 
   s.subspec 'ApiManager' do |ss|
-    ss.requires_arc = true
     ss.source_files  = "MANCommonLib/ApiManager.{h,m}"
+    ss.dependency 'AFNetworking'
   end
 
   s.subspec 'BackgroundTaskKillImageView' do |ss|
-    ss.requires_arc = true
     ss.source_files  = "MANCommonLib/BackgroundTaskKillImageView.{h,m}"
     ss.resources = "MANCommonLib/BackgroundTaskKillImageView.xib"
   end
 
   s.subspec 'LteToWifiImageView' do |ss|
-    ss.requires_arc = true
     ss.source_files  = "MANCommonLib/LteToWifiImageView.{h,m}"
     ss.resources = "MANCommonLib/LteToWifiImageView.xib"
   end
 
   s.subspec 'CustomTextView' do |ss|
-    ss.requires_arc = true
     ss.source_files  = "MANCommonLib/CustomTextView.{h,m}"
   end
 
   s.subspec 'DeviceChecker' do |ss|
-    ss.requires_arc = true
     ss.source_files  = "MANCommonLib/DeviceChecker.{h,m}"
   end
 
   s.subspec 'MBSimpleAlertUtility' do |ss|
-    ss.requires_arc = true
     ss.source_files  = "MANCommonLib/MBSimpleAlertUtility.{h,m}"
   end
 
   s.subspec 'StoryboardClassMaker' do |ss|
-    ss.requires_arc = true
     ss.source_files  = "MANCommonLib/StoryboardClassMaker.{h,m}"
   end
 
   s.subspec 'NSString' do |ss|
-    ss.requires_arc = true
     ss.source_files  = "MANCommonLib/NSString*.{h,m}"
   end
 
   s.subspec 'UIAlertView' do |ss|
-    ss.requires_arc = true
     ss.source_files  = "MANCommonLib/UIAlertView*.{h,m}"
   end
-
 
 end
