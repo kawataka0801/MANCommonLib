@@ -1,5 +1,4 @@
 Pod::Spec.new do |s|
-
   s.name         = "MANCommonLib"
   s.version      = "0.0.1"
   s.summary      = "common classes in student and tutor app"
@@ -8,7 +7,6 @@ Pod::Spec.new do |s|
   s.platform     = :ios
   s.source       = { :git => "https://github.com/kawataka0801/MANCommonLib.git" }
   s.requires_arc = true
-  s.source_files  = "MANCommonLib/.*"
 
   s.subspec 'ApiErrorHandleHelper' do |ss|
     ss.source_files  = "MANCommonLib/ApiErrorHandleHelper.{h,m}"
