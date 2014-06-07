@@ -7,6 +7,7 @@ Pod::Spec.new do |s|
   s.author             = { "kawataka0801" => "kawataka0801@gmail.com" }
   s.platform     = :ios
   s.source       = { :git => "https://github.com/kawataka0801/MANCommonLib.git", :tag => "v0.0.1" }
+  s.requires_arc = true
   s.source_files  = "MANCommonLib/.*"
 
   s.subspec 'ApiErrorHandleHelper' do |ss|
@@ -18,10 +19,12 @@ Pod::Spec.new do |s|
   end
 
   s.subspec 'BackgroundTaskKillImageView' do |ss|
+    ss.resources = "MANCommonLib/BackgroundTaskKillImageView.xib"
     ss.source_files  = "MANCommonLib/BackgroundTaskKillImageView.{h,m,xib}"
   end
 
   s.subspec 'LteToWifiImageView' do |ss|
+    ss.resources = "MANCommonLib/LteToWifiImageView.xib"
     ss.source_files  = "MANCommonLib/LteToWifiImageView.{h,m,xib}"
   end
 
