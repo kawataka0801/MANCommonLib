@@ -12,11 +12,10 @@
 
 @implementation ApiManager
 
-
-/**
- * こっちにライブラリを変更する
- */
-
+#define ApiHost @"a"
+#define kClientId @"b"
+#define kSecret @"c"
+#define kTokenURL @"d"
 
 +(AFOAuth2Client *)oauthClient
 {
