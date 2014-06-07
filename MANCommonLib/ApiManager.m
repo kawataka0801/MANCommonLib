@@ -18,6 +18,9 @@
 #define kTokenURL @"d"
 #define kOauth2StoreIdentifier @"e"
 
+static NSString *SERVER_ERROR_ALERT = @"サーバーエラーです。\nお手数ですが、時間を置いてご利用ください";
+static NSString *kRefreshAccessTokenError = @"アクセストークン更新でエラーが発生しました。";
+
 +(AFOAuth2Client *)oauthClient
 {
     AFOAuth2Client *oauthClient = [AFOAuth2Client clientWithBaseURL:[NSURL URLWithString:ApiHost] clientID:kClientId secret:kSecret];
@@ -207,7 +210,7 @@
             
         case -1009:
             return completion([[NSError alloc]initWithDomain:@"networkError"
-                                                        code:ApiManagerErrorStateNetwork
+                                                        code:ApiManagerErrorStateNetworefreshAccessTokenError @"アクセストークン更新でエラーが発生しました。"
                                                     userInfo:@{NSLocalizedDescriptionKey:NETWORK_ERROR_ALERT}]);
             break;
             
