@@ -16,6 +16,7 @@
 #define kClientId @"b"
 #define kSecret @"c"
 #define kTokenURL @"d"
+#define kOauth2StoreIdentifier @"e"
 
 +(AFOAuth2Client *)oauthClient
 {
