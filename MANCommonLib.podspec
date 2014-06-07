@@ -7,6 +7,7 @@ Pod::Spec.new do |s|
   s.platform     = :ios
   s.source       = { :git => "https://github.com/kawataka0801/MANCommonLib.git" }
   s.requires_arc = true
+  s.ios.deployment_target = '7.0'
 
   s.subspec 'ApiErrorHandleHelper' do |ss|
     ss.source_files  = "MANCommonLib/ApiErrorHandleHelper.{h,m}"
@@ -15,6 +16,7 @@ Pod::Spec.new do |s|
   s.subspec 'ApiManager' do |ss|
     ss.source_files  = "MANCommonLib/ApiManager.{h,m}"
     ss.dependency 'AFNetworking'
+    ss.dependency 'AFOAuth2Client'
   end
 
   s.subspec 'BackgroundTaskKillImageView' do |ss|
