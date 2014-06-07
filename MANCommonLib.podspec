@@ -6,7 +6,7 @@ Pod::Spec.new do |s|
   s.homepage     = "http://github.com/kawataka0801/MANCommonLib"
   s.author             = { "kawataka0801" => "kawataka0801@gmail.com" }
   s.platform     = :ios
-  s.source       = { :git => "https://github.com/kawataka0801/MANCommonLib.git", :tag => "v0.0.1" }
+  s.source       = { :git => "https://github.com/kawataka0801/MANCommonLib.git" }
   s.requires_arc = true
   s.source_files  = "MANCommonLib/.*"
 
